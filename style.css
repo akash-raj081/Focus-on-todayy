@@ -1,0 +1,186 @@
+body {
+  background-color:#48A30012;
+  font-family: poppins;
+  margin: 0;
+}
+main{
+    padding: 0 16px 32px;
+    display: block;
+}
+
+.tittle {
+    font-size: 64px;
+    color: #48a300;
+    text-align: center;
+}
+
+.tittle span {
+  color:#61481c;
+}
+
+.tittle u{
+    
+    text-decoration-line:underline;
+    text-decoration-color: #61481c;
+    text-decoration-style: dotted;
+}
+
+.sub-tittle h2{
+    font-size: 32px;
+}
+.app-container
+{
+    background: #FBFBFB;
+    max-width: 660px;
+    margin-inline:auto;
+    border-radius: 15px;
+    padding: 32px 48px;
+    box-shadow: 0 0 4px 0px  #61481c;
+
+}
+
+.sun-icon{
+    vertical-align: middle;
+    margin-left:1rem;
+}
+
+
+
+.progress-label{
+    font-size: 14px;
+    color: #858585;
+    margin-bottom: 18px;
+}
+
+.progress-bar{
+    background-color: #48A3001A;
+    ;
+    height:25px;
+    border-radius: 15px;
+}
+
+.progress-value{
+    height: 100%;
+    width: 0;
+    background-color: #48A300;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    color:#EEFFE0;
+    display: flex;
+    align-items: center;
+    /* padding-left: 20px; */
+    overflow: hidden;
+    transition: width 0.50s ease-in-out;
+    
+}
+
+.progress-value span{
+    padding-left: 20px;
+    min-width: max-content;
+}
+
+.error-label{
+    color:#FF5151;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+   
+}
+
+.show-error .error-label{
+    display: block;
+}
+
+.goal-container{
+    border: 1px solid #48A300;
+    border-radius: 15px;
+    height: 70px;
+    display:flex;
+    align-items:center;
+    padding: 0 28px;
+    margin-bottom: 28px;
+    background-color:#FFFFFF;
+    align-self: stretch;    
+    margin-top: 29px;
+}
+
+.custom-checkbox{
+    height: 24px;
+    width: 24px;
+    border: 1px solid rgb(97, 72,28,0.3);
+    border-radius: 50px;
+    vertical-align: middle;
+    flex-shrink:0;    
+}
+
+.check-icon{
+    display: none;
+}
+
+.goal-input{
+    border: none;
+    outline: none;
+    padding-left:25px;
+    font-size:14px;
+    font-family: inherit;
+    width: 100%;
+    align-self: stretch;
+    font-weight: 500;
+     
+}
+
+.goal-input::placeholder{
+    color: green ;
+    opacity: 1  ;
+}
+
+.qote{
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.madewith{
+    font-size: 10px;
+    color: #858585;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.completed .custom-checkbox{
+    background-color: #48A300;
+    border-color: #48A300;
+}
+
+.completed .check-icon{
+    display: block;
+}
+
+.completed .goal-input{
+    color: #48A300;
+    text-decoration-line: line-through;
+}
+
+@media (max-width: 768px){
+    .tittle{
+        font-size: 25px;
+    }
+    .app-container{
+        /* padding: 16px 20px; */
+        padding: 20px 22px;
+    }
+
+    .goal-container{
+        height: 60px;
+        margin-bottom: 16px;
+        border-radius: 12px;
+    }
+    
+    .custom-checkbox{
+        height: 19px;
+        width: 19px;
+    }
+
+}
